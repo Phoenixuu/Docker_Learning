@@ -1,0 +1,25 @@
+check image ls
+sudo docker image ls 
+
+docker run nginx
+
+delete image 
+docker rmi -f hello-world:latest 
+
+Basic docker in cloud
+sudo docker run kodekloud/simple-webapp
+docker run -d kodekloud/simple-webapp
+docker ps 
+sudo docker attach de9af
+
+Run - tag
+docker run redis -> docker run redis:5.0  
+sudo docker run kodekloud/simple-prompt-docker 
+
+Run - Volume mapping
+docker run mysql
+docker stop mysql
+docker rm mysql
+docker run -v /opt/datadir:/var/lib/mysql mysql
+
+create your own image
