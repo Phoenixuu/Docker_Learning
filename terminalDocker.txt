@@ -1,0 +1,20 @@
+1. Create directory
+
+2. Create file html: echo "Hello World!" > index.html
+
+3. Create Dockerfile: touch Docker
+
+4. Open Dockerfile and add
+	From nginx
+	COPY index.html /usr/share/ngĩn/html
+
+	vi Docker file: Để sửa file Docker
+	i + enter : để insert và viết mã
+	Esc: để hoàn thành viết mà
+	:wq + enter: để quay về terminal
+
+5. Start docker & Build docker image from dockerfile
+	docker build -t myapp .
+
+6. Run docker container from image:
+	docker run -p 8080:80 myapp

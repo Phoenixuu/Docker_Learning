@@ -1,0 +1,6 @@
+Image layers:
+1. The first layer adds basic commands and a package manager, such as apt.
+2. The second layer installs a Python runtime and pip for dependency management.
+3. The third layer copies in an applications's specific requirements.txt file
+4. The fourth layer installs that application's specific dependencies
+5. The fith layer copies in the actual source code of the application
