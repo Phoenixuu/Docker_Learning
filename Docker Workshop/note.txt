@@ -1,0 +1,9 @@
+Sau khi sửa code, lúc build sẽ bị đè lên nhau nên cần stop, xóa thư mục cũ đi trước khi chạy
+
+Trước khi push cần tag
+docker tag getting-started YOUR-USER-NAME/getting-started
+docker push YOUR-USER-NAME/getting-started
+
+Run online & Play with docker
+docker build --platform linux/amd64 -t YOUR-USER-NAME/getting-started .
+Play with docker to using online

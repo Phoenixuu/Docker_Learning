@@ -1,0 +1,16 @@
+1. Publishing and exposing ports 8080
+2. Overriding container defaults
+3. Persisiting container data
+4. Sharing local files with containers
+5. Multi container applications
+
+
+docker run -d -p 8080:80 nginx
+docker run -p 80 nginx
+docker ps
+docker run -e foo=bar postgres env
+docker run --env-file .env postgres env
+docker run -e POSTGRES_PASSWORD=secret --memory="512m" --cpus="0.5" postgres
+docker network create mynetwork
+docker network ls
+docker run -d -e POSTGRES_PASSWORD=secret -p 5434:5432 --network mynetwork postgres
